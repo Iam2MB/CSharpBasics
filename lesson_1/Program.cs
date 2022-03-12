@@ -6,7 +6,10 @@ namespace lesson_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Введите имя:");
+            string name = Console.ReadLine();
+            DateTime now = DateTime.Now;
+            Console.WriteLine($"Привет, {name}, сегодня {now.ToString("d")}");
         }
     }
 }
