@@ -6,60 +6,81 @@ namespace lesson_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите минимальную темпиратуру за день:");
-            string minTemp = Console.ReadLine();
+            Console.Write("Введите минимальную температуру за месяц: ");
+            float minTemp = Single.Parse(Console.ReadLine());
 
-            Console.WriteLine("Введите макисмальну темпиратуру за день:");
-            string maxTemp = Console.ReadLine();
+            Console.Write("Введите макисмальную температуру за месяц: ");
+            float maxTemp = Single.Parse(Console.ReadLine());
 
-            double avg = (Double.Parse(minTemp) + Double.Parse(maxTemp)) / 2;
-            Console.WriteLine("Средняя темпиратура за день :" + avg);
+            float avgTemp = (minTemp + maxTemp) / 2;
+            Console.WriteLine("Средняя темпиратура за месяц: " + avgTemp + "\n");
 
-            Console.WriteLine("Enter month: ");
-            int month = int.Parse(Console.ReadLine());
+            int month = 0;
+            while (month < 1 || month > 12)
+            {
+                Console.Write("Введите номер месяца: ");
+                month = int.Parse(Console.ReadLine());
+                if (month < 1 || month > 12)
+                {
+                    Console.WriteLine("Месяца с таким номером нет");
+                }
+            }
+                        
+            string rain_month = "";
+            if ((month == 12 || month == 1 || month == 2) && avgTemp > 0)
+            {
+                rain_month = " (Дождливый месяц)";
+            }
+
+            Console.Write("Месяц: ");
             switch (month)
             {
                 case 1:
-                    Console.WriteLine("moth1");
+                    Console.WriteLine($"Январь{rain_month}");
                     break;
                 case 2:
-                    Console.WriteLine("moth12");
+                    Console.WriteLine($"Февраль{rain_month}");
                     break;
                 case 3:
-                    Console.WriteLine("moth13");
+                    Console.WriteLine("Март");
                     break;
                 case 4:
-                    Console.WriteLine("moth14");
+                    Console.WriteLine("Апрель");
                     break;
                 case 5:
-                    Console.WriteLine("moth15");
+                    Console.WriteLine("Май");
                     break;
                 case 6:
-                    Console.WriteLine("moth16");
+                    Console.WriteLine("Июнь");
                     break;
                 case 7:
-                    Console.WriteLine("moth17");
+                    Console.WriteLine("Июль");
                     break;
                 case 8:
-                    Console.WriteLine("moth18");
+                    Console.WriteLine("Август");
                     break;
                 case 9:
-                    Console.WriteLine("moth19");
+                    Console.WriteLine("Сентябрь");
                     break;
                 case 10:
-                    Console.WriteLine("moth110");
+                    Console.WriteLine("Октябрь");
                     break;
                 case 11:
-                    Console.WriteLine("moth112");
+                    Console.WriteLine("Ноябрь");
                     break;
                 case 12:
-                    Console.WriteLine("moth111");
-                    break;
-                default:
-                    Console.WriteLine("Нет такого месяца");
+                    Console.WriteLine($"Декабрь{rain_month}");
                     break;
             }
-            if ((month == 12 || month == 1 || month == 2) && avg > 0) Console.WriteLine("Ты пидор");
+            
+            if (month % 2 == 0)
+            {
+                Console.WriteLine("Номер четный");
+            }
+            else
+            {
+                Console.WriteLine("Номер нечетный");
+            }
         }
     }
 }
