@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson_5_1", "lesson_5_1\lesson_5_1.csproj", "{30E515A1-6A9E-428C-B1AE-110DC46C01F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lesson_5_1", "lesson_5_1\lesson_5_1.csproj", "{30E515A1-6A9E-428C-B1AE-110DC46C01F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson_5_3", "lesson_5_3\lesson_5_3.csproj", "{2DBBF01C-F291-4BEA-B991-742C22C41F4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lesson_5_3", "lesson_5_3\lesson_5_3.csproj", "{2DBBF01C-F291-4BEA-B991-742C22C41F4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson_5_4", "lesson_5_4\lesson_5_4.csproj", "{6E94FC53-6D51-497E-8313-59CEF5AD053D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lesson_5_4_1", "lesson_5_4\lesson_5_4_1.csproj", "{6E94FC53-6D51-497E-8313-59CEF5AD053D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson_5_4_2", "lesson_5_4_2\lesson_5_4_2.csproj", "{CF6B4E20-49E8-4095-B897-6B58CE22C0DA}"
 EndProject
